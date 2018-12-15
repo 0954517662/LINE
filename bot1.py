@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-#thanks to allfams
-
+# SELFBOT-BY:MAX
 from LineAPI import *
 from LineAPI.linepy import *
 from LineAPI.akad.ttypes import Message
@@ -15,7 +14,7 @@ import time, random, multiprocessing, sys, json, codecs, threading, glob, re, st
 from gtts import gTTS
 from googletrans import Translator
 
-client = LINE("EzE5r91DIg6vdCo0UDYf.eKNgao1xe5yDQlJaV5UJ+W.FPwZdxHsfpGGhHx3tDjPfNoqLxaMvj+YMOXRtxctllY=")
+client = LINE()
 clientMid = client.profile.mid
 clientProfile = client.getProfile()
 clientSettings = client.getSettings()
@@ -26,17 +25,17 @@ msg_dict = {}
 msg_dict1 = {}
 
 settings = {
-    "autoAdd": False,
+    "autoAdd": True,
     "autoJoin": False,
     "autoBlock": False,
     "autoLeave": False,
     "autoRead": False,
     "autoRespon": False,
-    "welcome": False,
-    "leave": False,
-    "Respontag":"kangen lu",
+    "welcome": True,
+    "leave": True,
+    "Respontag":"kangen lu...",
     "stickerOn": False,
-    "autoJoinTicket": False,
+    "autoJoinTicket": True,
     "checkContact": False,
     "checkPost": False,
     "checkSticker": False,
@@ -454,9 +453,9 @@ def helpmessage():
         key = settings["keyCommand"]
     else:
         key = ''
-    helpMessage = "╭━━━━━━━━━━━━━━━━\n"
+    helpMessage = "╭━━━━━━━━━━━\n"
     helpMessage += "┃ " + "╭─⚜StatusHelp⚜─\n"
-    helpMessage += "┃" + " ├──────────────\n"
+    helpMessage += "┃" + " ├─────────\n"
     helpMessage += "┃" + " │ 0%i)" % num + key + " Restart\n"
     num = (num+1)
     helpMessage += "┃" + " │ 0%i)" % num + key + " Runtime\n"
@@ -572,9 +571,9 @@ def helpmessage():
     num = (num+1)
     helpMessage += "┃" + " │ %i)" % num + key + " Musik\n"
     num = (num+1)
-    helpMessage += "┃ " + "├──────────────\n"
-    helpMessage += "┃ " + "╰───⚜ ᴀʟɪsʜ ᴊᴏᴋᴇʀ⚜────\n"
-    helpMessage += "╰━━━━━━━━━━━━━━━━"
+    helpMessage += "┃ " + "├────────────\n"
+    helpMessage += "┃ " + "╰─⚜ SELFBOT-BY:MAX ⚜─\n"
+    helpMessage += "╰━━━━━━━━━━━"
     return helpMessage
 #==============================================================================#
 def clientBot(op):
@@ -808,7 +807,7 @@ def clientBot(op):
                                     client.sendMessage(to, "Berhasil mengubah key command menjadi [ {} ]".format(str(key).lower()))
                             elif cmd == "speed" or cmd == "sp":
                                 start = time.time()
-                                client.sendMessage(to, "^_^")
+                                client.sendMessage(to, "Speedpleast...")
                                 elapsed_time = time.time() - start
                                 client.sendMessage(to, "{} sec".format(str(elapsed_time)))
                             elif cmd == "runtime":
@@ -824,7 +823,7 @@ def clientBot(op):
 #====================================================================================================================================
                             elif cmd == "autoadd on":
                                 settings["autoAdd"] = True
-                                client.sendMessageWithContent(to, "???? ??? ??",'?????','http://line.me/ti/p/V_qDdTpVw6','https://image.ibb.co/dT8aQJ/image.jpg')
+                                client.sendMessageWithContent(to, "???? ??? ??",'?????','http://line.me/ti/p/~maxsett','https://image.ibb.co/dT8aQJ/image.jpg')
                             elif cmd == "autoadd off":
                                 settings["autoAdd"] = False
                                 client.sendMessage(to, "Berhasil menonaktifkan auto add")
@@ -942,7 +941,7 @@ def clientBot(op):
                             elif cmd.startswith("changename:"):
                                 sep = text.split(" ")
                                 string = text.replace(sep[0] + " ","")
-                                if len(string) <= 20:
+                                if len(string) <= 2000:
                                     profile = client.getProfile()
                                     profile.displayName = string
                                     client.updateProfile(profile)
@@ -950,7 +949,7 @@ def clientBot(op):
                             elif cmd.startswith("changebio:"):
                                 sep = text.split(" ")
                                 string = text.replace(sep[0] + " ","")
-                                if len(string) <= 500:
+                                if len(string) <= 50000:
                                     profile = client.getProfile()
                                     profile.statusMessage = string
                                     client.updateProfile(profile)
