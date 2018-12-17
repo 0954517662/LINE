@@ -1,4 +1,4 @@
-# SBSILENT
+# SELFBOT-BY:MAX
 ...
 Cara Install Bot :
 C9 SERVER/ VPS :
@@ -18,9 +18,9 @@ C9 SERVER/ VPS :
 - `sudo pip3 install wikipedia`
 - `sudo pip3 install tweepy`
 - `sudo pip3 install youtube_dl`
-- `git clone https://github.com/6ul4n/SILENT`
-- `cd SILENT`
-- `python3 bot5.py`
+- `git clone https://github.com/0954517662/LINEZ`
+- `cd LINEZ`
+- `python3 selfmax.py`
 
 INSTALL Di TERMUX :
 - `pkg update`
@@ -39,16 +39,16 @@ INSTALL Di TERMUX :
 - `pip3 install wikipedia`
 - `pip3 install youtube_dl`
 - `pip3 install tweepy`
-- `git clone https://github.com/6ul4n/SILENT`
-- `cd SILENT`
-- `python3 bot5.py`
+- `git clone https://github.com/0954517662/LINEZ`
+- `cd LINEZ`
+- `python3 selfmax.py`
 
 Cara Menjalankan Bot Kembali :
 ------
 Di C9 :
-- `cd SILENT`
-- `python3 bot5.py`
+- `cd LINEZ`
+- `python3 selfmax.py`
 
 Di Termux :
-- `cd SILENT`
-- `python3 bot5.py`
+- `cd LINEZ`
+- `python3 selfmax.py`
