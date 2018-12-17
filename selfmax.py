@@ -1372,7 +1372,7 @@ def clientBot(op):
                                     txt = u''
                                     s=0
                                     b=[]
-                                    for i in group.members[a*100 : (a+1)*20]:
+                                    for i in group.members[a*20 : (a+1)*20]:
                                         b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
                                         s += 7
                                         txt += u'@Juns \n'
