@@ -25,17 +25,17 @@ msg_dict = {}
 msg_dict1 = {}
 
 settings = {
-    "autoAdd": True,
+    "autoAdd": False,
     "autoJoin": False,
-    "autoBlock": False,
+    "autoBlock": True,
     "autoLeave": False,
     "autoRead": False,
     "autoRespon": False,
-    "welcome": True,
-    "leave": True,
-    "Respontag":"kangen lu...",
+    "welcome": False,
+    "leave": False,
+    "Respontag":"😈 มีอะไรครับ 😈",
     "stickerOn": False,
-    "autoJoinTicket": True,
+    "autoJoinTicket": False,
     "checkContact": False,
     "checkPost": False,
     "checkSticker": False,
@@ -591,9 +591,9 @@ def clientBot(op):
         if op.type == 5:
             print ("[ 5 ] NOTIFIED AUTO BLOCK CONTACT")
             if settings["autoBlock"] == True:
-                client.blockContact(op.param1)
                 client.sendMessage(op.param1,"Tapi Maaf Auto Block Saya Aktif........")
-
+                client.blockContact(op.param1)
+                
         if op.type == 13:
             print ("[ 13 ] NOTIFIED INVITE INTO GROUP")
             if clientMid in op.param3:
@@ -901,7 +901,7 @@ def clientBot(op):
                                 client.sendMessage(to, "Berhasil menonaktifkan unsend message")
                             elif cmd == "settings":
                                 try:
-                                    ret_ = "Settings Bot\n\n"
+                                    ret_ = "😈 SELFBOT-BY:MAX 😈\n\n"
                                     if settings["autoAdd"] == True: ret_ += "⚫ Autoadd\n"
                                     else: ret_ += "⚪ Autoadd\n"
                                     if settings["autoBlock"] == True: ret_ += "⚫ Autoblock\n"
@@ -930,7 +930,7 @@ def clientBot(op):
                                     else: ret_ += "⚪ Setkey\n"
                                     if settings["unsendMessage"] == True: ret_ += "⚫ Unsendmsg\n"
                                     else: ret_ += "⚪ Unsendmsg\n"
-                                    ret_ += "      Bots V.1      "
+                                    ret_ += "     Bots V.10      "
                                     client.sendMessage(to, str(ret_))
                                 except Exception as e:
                                     client.sendMessage(msg.to, str(e))
