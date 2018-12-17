@@ -616,7 +616,7 @@ def clientBot(op):
                 tgb = client.getGroup(op.param1)
                 sendMention(op.param1, "Kok kabur si  @!, gk betah di {} \nya udah metjalan aja ya".format(str(tgb.name)),[op.param2])
                 client.sendContact(op.param1, op.param2)
-                client.sendImageWithURL(op.param1, "http://dl.profile.line-cdn.net{}".format(dan.picturePath))
+                #client.sendImageWithURL(op.param1, "http://dl.profile.line-cdn.net{}".format(dan.picturePath))
         	
         if op.type == 17:
             print ("[ 17 ] NOTIFIED WELCOME INTO GROUP")
@@ -625,7 +625,7 @@ def clientBot(op):
                 tgb = client.getGroup(op.param1)
                 sendMention(op.param1, "Haii @!, met gabung di {} \n jangan bandel ya kk".format(str(tgb.name)),[op.param2])
                 client.sendContact(op.param1, op.param2)
-                client.sendImageWithURL(op.param1, "http://dl.profile.line-cdn.net{}".format(dan.picturePath))
+                #client.sendImageWithURL(op.param1, "http://dl.profile.line-cdn.net{}".format(dan.picturePath))
 
         if op.type in [25,26]:
             print ("[ 25 ] SEND MESSAGE")
