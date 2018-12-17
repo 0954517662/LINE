@@ -454,7 +454,7 @@ def helpmessage():
     else:
         key = ''
     helpMessage = "╭━━━━━━━━━━━\n"
-    helpMessage += "┃ " + "╭─⚜ STATUS HELP ⚜─\n"
+    helpMessage += "┃ " + "╭─⚜ HELP ⚜─\n"
     helpMessage += "┃" + " ├──────────\n"
     helpMessage += "┃" + " │ 0%i • " % num + key + " Restart\n"
     num = (num+1)
@@ -466,7 +466,7 @@ def helpmessage():
     num = (num+1)
     helpMessage += "┃" + " │ 0%i • " % num + key + " About\n"
     num = (num+1)
-    helpMessage += "┃" + " ├─⚜ SETTINGS COMMAND ⚜─\n"
+    helpMessage += "┃" + " ├─⚜ SETTINGS ⚜─\n"
     helpMessage += "┃" + " │ 0%i • " % num + key + " AutoAdd on/off\n"
     num = (num+1)
     helpMessage += "┃" + " │ 0%i • " % num + key + " AutoJoin on/off\n"
@@ -487,7 +487,7 @@ def helpmessage():
     num = (num+1)
     helpMessage += "┃" + " │ %i • " % num + key + " Leavemsg on/off\n"
     num = (num+1)
-    helpMessage += "┃" + " ├─⚜ SELF COMMAND ⚜─\n"
+    helpMessage += "┃" + " ├─⚜ SELF ⚜─\n"
     helpMessage += "┃" + " │ %i • " % num + key + " Me\n"
     num = (num+1)
     helpMessage += "┃" + " │ %i • " % num + key + " Mymid\n"
@@ -544,7 +544,7 @@ def helpmessage():
     num = (num+1)
     helpMessage += "┃" + " │ %i • " % num + key + " Liststicker\n"
     num = (num+1)
-    helpMessage += "┃" + " ├─⚜ COMMAND GROUP ⚜─\n"
+    helpMessage += "┃" + " ├─⚜ GROUP ⚜─\n"
     helpMessage += "┃" + " │ %i • " % num + key + " GroupCreator\n"
     num = (num+1)
     helpMessage += "┃" + " │ %i • " % num + key + " GroupId\n"
@@ -573,7 +573,7 @@ def helpmessage():
     num = (num+1)
     helpMessage += "┃" + " │ %i • " % num + key + " Musik\n"
     num = (num+1)
-    helpMessage += "┃ " + "├────────────\n"
+    helpMessage += "┃ " + "├──────────\n"
     helpMessage += "┃ " + "╰─⚜ SELFBOT-BY:MAX ⚜─\n"
     helpMessage += "╰━━━━━━━━━━━"
     return helpMessage
